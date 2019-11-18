@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast Application</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700|Quicksand:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="assets/EasyAutocomplete/easy-autocomplete.min.css"> 
+
+    <!-- Additional CSS Themes file - not required-->
+    <link rel="stylesheet" href="assets/EasyAutocomplete/easy-autocomplete.themes.min.css">
+</head>
+
+<body>
+    <div id="weather-container">
+        <div class="container-gradient"></div>
+        <div class="container">
+            <div class="row">
+                <div class="search-wrapper">
+                    <label for="search"></label>
+                    <input type="text" id="search">
+                </div>
+            </div>
+            <div class="row">
+                <div id="weather-body">
+                    <div class="col-12 weather-body-single">
+                        <div class="weather-body-single-overlay"></div>
+                        <div class="row">
+                            <div class="col-6 weather-body-single-info">
+                                <div class="weather-body-single-temp">
+                                    <span>26</span><i class="wi wi-degrees"></i>
+                                </div>
+                                <div class="weather-body-single-status">
+                                    <h4>Cloudy</h4>
+                                </div>
+                            </div>
+                            <div class="col-6 weather-body-single-city-col">
+                                <div class="weather-body-single-city-title">
+                                    <h2>France</h2>
+                                    <div class="weather-body-single-city-icon">
+                                        <div class="weather-body-single-city-icon-circle">
+                                            <i class="wi wi-day-sunny"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weather-body-single-additional">
+                            <div class="row">
+                                <div class="col-3 weather-body-single-additional-item">
+                                    <div class="weather-body-single-humidity">
+                                        <div class="weather-body-single-humidity-title">
+                                            Humidity
+                                        </div>
+                                        <div class="weather-body-single-humidity-value">
+                                            <span>64</span> %
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 weather-body-single-additional-item">
+                                    <div class="weather-body-single-wind">
+                                        <div class="weather-body-single-wind-title">
+                                            Wind
+                                        </div>
+                                        <div class="weather-body-single-wind-value">
+                                            <span>12</span> k/m
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 weather-body-single-additional-item">
+                                    <div class="weather-body-single-pressure">
+                                        <div class="weather-body-single-pressure-title">
+                                            Pressure
+                                        </div>
+                                        <div class="weather-body-single-pressure-value">
+                                            <span>1007</span> mbar
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 weather-body-single-additional-item">
+                                    <div class="weather-body-single-cloudness">
+                                        <div class="weather-body-single-cloudness-title">
+                                            Cloudness
+                                        </div>
+                                        <div class="weather-body-single-cloudness-value">
+                                            <span>64</span> %
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 weather-body-daily">
+                        <ul class="weather-body-daily-list">
+                            <li id="1" class="weather-body-daily-list-single">
+                                <div class="weather-body-daily-list-single-title">
+                                    <h4>Monday</h4>
+                                </div>
+                                <div class="weather-body-daily-list-single-icon">
+                                    <div class="weather-body-daily-list-single-icon-circle">
+                                        <i class="wi wi-day-sunny"></i>
+                                    </div>
+                                </div>
+                                <div class="weather-body-daily-list-single-status">
+                                    Sunny
+                                </div>
+                                <div class="weather-body-daily-list-single-temp">
+                                    <span>26</span><i class="wi wi-degrees"></i>
+                                </div>
+                            </li>
+                            <li id="2" class="weather-body-daily-list-single">
+                                <div class="weather-body-daily-list-single-title">
+                                    <h4>Tuesday</h4>
+                                </div>
+                                <div class="weather-body-daily-list-single-icon">
+                                    <div class="weather-body-daily-list-single-icon-circle">
+                                        <i class="wi wi-day-sunny"></i>
+                                    </div>
+                                </div>
+                                <div class="weather-body-daily-list-single-status">
+                                    Sunny
+                                </div>
+                                <div class="weather-body-daily-list-single-temp">
+                                    <span>26</span><i class="wi wi-degrees"></i>
+                                </div>
+                            </li>
+                            <li id="3" class="weather-body-daily-list-single">
+                                <div class="weather-body-daily-list-single-title">
+                                    <h4>Wednesday</h4>
+                                </div>
+                                <div class="weather-body-daily-list-single-icon">
+                                    <div class="weather-body-daily-list-single-icon-circle">
+                                        <i class="wi wi-day-sunny"></i>
+                                    </div>
+                                </div>
+                                <div class="weather-body-daily-list-single-status">
+                                    Sunny
+                                </div>
+                                <div class="weather-body-daily-list-single-temp">
+                                    <span>26</span><i class="wi wi-degrees"></i>
+                                </div>
+                            </li>
+                            <li id="4" class="weather-body-daily-list-single">
+                                <div class="weather-body-daily-list-single-title">
+                                    <h4>Thursday</h4>
+                                </div>
+                                <div class="weather-body-daily-list-single-icon">
+                                    <div class="weather-body-daily-list-single-icon-circle">
+                                        <i class="wi wi-day-sunny"></i>
+                                    </div>
+                                </div>
+                                <div class="weather-body-daily-list-single-status">
+                                    Sunny
+                                </div>
+                                <div class="weather-body-daily-list-single-temp">
+                                    <span>26</span><i class="wi wi-degrees"></i>
+                                </div>
+                            </li>
+                            <li id="5" class="weather-body-daily-list-single">
+                                <div class="weather-body-daily-list-single-title">
+                                    <h4>Friday</h4>
+                                </div>
+                                <div class="weather-body-daily-list-single-icon">
+                                    <div class="weather-body-daily-list-single-icon-circle">
+                                        <i class="wi wi-day-sunny"></i>
+                                    </div>
+                                </div>
+                                <div class="weather-body-daily-list-single-status">
+                                    Sunny
+                                </div>
+                                <div class="weather-body-daily-list-single-temp">
+                                    <span>26</span><i class="wi wi-degrees"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- widget -->
+            </div>        
+        </div>
+    </div>
+    <div class="widget-wrapper">
+        <div class="close-widget">&times;</div>
+        <div class="widget-city">
+            <h3>CityName</h3>
+        </div>
+        <div class="widget-title">
+            <h4>DayInWeek</h4>
+        </div>
+        <div class="widget-icon">
+            <div class="widget-icon-circle">
+                <i class="wi wi-day-sunny"></i>
+            </div>
+        </div>
+        <div class="widget-status">
+            Clear
+        </div>
+        <div class="widget-temp">
+            <div class="widget-main-temp">
+                <span>19</span><i class="wi wi-celsius"></i>
+            </div>
+            <div class="row widget-min-max-temp">
+                <div class="col-6">
+                    <div class="widget-min-max-temp-min-title">min</div>
+                    <div class="widget-min-max-temp-min-value"><span>8</span><i class="wi wi-celsius"></i></div>
+                </div>
+                <div class="col-6">
+                    <div class="widget-min-max-temp-max-title">max</div>
+                    <div class="widget-min-max-temp-max-value"><span>8</span><i class="wi wi-celsius"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-additional">
+            <div class="widget-humidity">
+                <div class="widget-humidity-title">Humidity</div>
+                <div class="widget-humidity-value"><span>10</span>%</div>
+            </div>
+            <div class="widget-wind">
+                <div class="widget-wind-title">Wind</div>
+                <div class="widget-wind-value"><span>10</span>K/M</div>
+            </div>
+            <div class="widget-pressure">
+                <div class="widget-pressure-title">Pressure</div>
+                <div class="widget-pressure-value"><span>1007</span> MBAR</div>
+            </div>
+            <div class="widget-cloudness">
+                <div class="widget-cloudness-title">Cloudness</div>
+                <div class="widget-cloudness-value"><span>18</span>%</div>
+            </div>
+        </div>
+    </div>
+    <div class="open-widget"><i class="wi wi-day-sunny"></i></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- JS file easy autocomplete plugin-->
+    <script src="assets/EasyAutocomplete/jquery.easy-autocomplete.min.js"></script> 
+
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

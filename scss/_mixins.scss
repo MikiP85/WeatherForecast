@@ -1,0 +1,16 @@
+// _mixins.scss
+@import 'variables';
+
+@mixin gradientHorizontal($firstColor, $secondColor) {
+	background: $firstColor; 
+	background: -moz-linear-gradient(left, $firstColor 0%, $secondColor 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, $firstColor 0%, $secondColor 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, $firstColor 0%, $secondColor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$firstColor', endColorstr='$secondColor',GradientType=1 ); /* IE6-9 */
+}
+
+@mixin boxShadow($leftRight, $topBottom, $blur, $spread, $colorRGBA) {
+	-webkit-box-shadow: $leftRight $topBottom $blur $spread $colorRGBA;
+	-moz-box-shadow: $leftRight $topBottom $blur $spread $colorRGBA;
+	box-shadow: $leftRight $topBottom $blur $spread $colorRGBA;
+}
